@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto;
+    height: 100%;
+    margin: 0 auto -75px;
+}
+.footer, .push {
+    height: 75px;
+}
+#seanheadshot {
+    height: 250px;
+    width: 200px;
+}

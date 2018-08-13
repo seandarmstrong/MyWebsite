@@ -1,22 +1,53 @@
 <!doctype html>
 <html>
 <head>
-    <title>Sean Armstrong</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sean Armstrong</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class"nav"><nav>
-        <a href="index.html">Home</a> |
+    <div class="container">
+        <nav class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
         <a href="about.html">About Sean</a>
+        <a href="portfolio.html">Sean's Portfolio</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </nav>
+        <div class="row">
+                <div class="column"><p><a href="https://github.com/snrmstrng/POSTerminal">POS Store Terminal</a></p></div>
+                <div class="column"><p><a href="https://github.com/snrmstrng/TaskManager">Task Manager</a></p></div>
         </div>
-        <div class="content"></div>
-        <div class="pusher"></div>
+        <div class="row">
+                <div class="column"><p>This project involved us creating a point of sale system using the console app. The program would parse a CSV file to pull product data and display data to add to cart and complete purchases.</p></div>
+                <div class="column"><p>This project involved creating a task manager application that allowed the user to add tasks, view tasks, complete tasks, and delete tasks. The task information they could enter include name, due date, task description, and a default value of incomplete.</p></div>
+        </div>
+        <div class="row">
+                <div class="column"><p><a href="https://github.com/snrmstrng/PigLatinTranslator">POS Store Terminal</a></p></div>
+                <div class="column"><p><a href="https://github.com/snrmstrng/CalculatingFactorials">Task Manager</a></p></div>
+        </div>
+        <div class="row">
+                <div class="column"><p>The Pig Latit translator will allow you to translate either a single word or complete sentences include Pig Latin. It accepts punctuation and does not translate numbers or special characters.</p></div>
+                <div class="column"><p>A simple math console app to calculate the factorial of an entered number. It will not let you enter a number that results in a number larger than the capactiy for integers.</p></div>
+        </div>
     </div>
-    <footer>
-        <p>Created by: Sean Armstrong</p>
-        <p>Contact Information: <a href="mailto:armstrong.d.sean@gmail.com">armstrong.d.sean</a>.</p>
-        <p>Social Media: <a href="https://www.linkedin.com/in/seandarmstrong/">LinkedIn</a></p>
-    </footer>
+<footer>
+            <p class="bottom-nav"><a href="index.html">Home</a> | <a href="about.html">About Sean</a> | <a href="portfolio.html">Sean's Portfolio</a></p>
+            <p class="footer-p" id="creator">Created by: Sean Armstrong</p> <p class="footer-p" id="email">Contact Information: <a href="mailto:armstrong.d.sean@gmail.com">armstrong.d.sean</a></p> <p class="footer-p" id="linkedin"><a href="https://www.linkedin.com/in/seandarmstrong/" class="fa fa-linkedin"></a></p><p class="footer-p"><a href="https://github.com/snrmstrng/"><img src="GitHub-Mark-32px.png" alt="GitHub logo"></a></p>
+</footer>
+    <script>
+            function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+              x.className += " responsive";
+          } else {
+              x.className = "topnav";
+          }
+      }
+      </script>
 </body>
 </html>
